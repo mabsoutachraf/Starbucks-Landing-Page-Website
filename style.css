@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.container {
+    height: 100vh;
+    z-index: 1000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+
+}
+
+header img {
+    width: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 30px;
+    font-weight: 400;
+}
+header ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+.content .textBox {
+    width: 60%;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 2.5em;
+}
+.content .textBox h2 span {
+    color: green;
+}
+
+.content .textBox button {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+.content .imgBox img {
+    width: 300px;
+}
+
+.thumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+.thumbs li {
+    margin-left: 30px;
+    transition: all 0.4s ease-in;
+    
+}
+.thumbs li:hover {
+    transform: translateY(-20px);
+    
+}
+.thumbs li img {
+    width: 50px;
+    
+}
+
+.thumbs li a {
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    clip-path: circle(400px at right 500px);
+    z-index: -1;
+}
+
